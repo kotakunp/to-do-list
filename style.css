@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .container {
@@ -12,6 +11,7 @@
     background: linear-gradient(135deg, #153677, #e63946);
     padding: 10px;
 }
+
 .card {
     width: 100%;
     max-width: 400px;
@@ -19,7 +19,6 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 12px;
-
 }
 
 h1 {
@@ -27,7 +26,6 @@ h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
-
 }
 
 .input-group {
@@ -41,6 +39,12 @@ h1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 12px;
+    outline: none;
+}
+
+#addTask:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 #addButton {
@@ -54,7 +58,7 @@ h1 {
 
 #addButton:hover {
     background: #45a049;
-  }
+}
 
 #taskList {
     list-style: none;
@@ -69,8 +73,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
+}
+
 .task button {
     background: #ff4d4d;
     border: none;
@@ -79,8 +83,7 @@ h1 {
     border-radius: 6px;
     cursor: pointer;
 }
-  
+
 .task button:hover {
     background: #e63946;
-
 }
