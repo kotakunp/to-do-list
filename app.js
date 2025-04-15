@@ -3,6 +3,11 @@ const taskInput = document.getElementById("addTask");
 const taskList = document.getElementById("taskList");
 
 addButton.addEventListener("click", addTask);
+taskInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
 
 function addTask() {
   const taskText = taskInput.value.trim();
@@ -15,6 +20,7 @@ function addTask() {
     <button onclick="removeTask(this)">Done</button>`;
 
   taskList.appendChild(li);
+
   taskInput.value = "";
   taskInput.focus();
 }
